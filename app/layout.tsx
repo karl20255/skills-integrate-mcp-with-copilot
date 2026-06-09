@@ -10,9 +10,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Alpine Brew Coffee — Chat with Carl',
+  title: 'Summit & Steam — Slope-Side Support',
   description:
-    'Chat with Carl, the warm and friendly support agent for Alpine Brew Coffee, your slope-side ski-lodge coffee shop.',
+    'Chat with Frostbite, the friendly support agent for Summit & Steam, your alpine ski-lodge coffee shop.',
   generator: 'v0.app',
   icons: {
     icon: [
