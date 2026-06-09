@@ -8,10 +8,10 @@ import { ChatBubble } from "@/components/chat-bubble"
 import { TypingIndicator } from "@/components/typing-indicator"
 
 const SUGGESTIONS = [
-  "What are your hours?",
   "What's on the menu?",
-  "Tell me about the Summit Pass",
-  "Do you have oat milk?",
+  "How much is a latte?",
+  "What do you recommend?",
+  "Tell me about your cold brew",
 ]
 
 function getText(parts: { type: string; text?: string }[]) {
@@ -56,11 +56,11 @@ export function ChatWindow() {
         </div>
         <div className="min-w-0">
           <h1 className="font-heading text-base font-semibold leading-tight text-foreground">
-            Summit &amp; Steam Support
+            Alpine Brew Coffee Support
           </h1>
           <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
             <span className="size-2 rounded-full bg-primary" />
-            Frostbite is online &middot; usually replies instantly
+            Carl is online &middot; usually replies instantly
           </p>
         </div>
       </header>
@@ -73,11 +73,11 @@ export function ChatWindow() {
               <Snowflake className="size-7" />
             </div>
             <h2 className="font-heading text-lg font-semibold text-foreground">
-              Welcome to the lodge!
+              Hey there, I&apos;m Carl!
             </h2>
             <p className="max-w-xs text-pretty text-sm leading-relaxed text-muted-foreground">
-              Ask me anything about our menu, hours, the Summit Pass loyalty program, or your order.
-              Grab a seat by the fire and let&apos;s chat.
+              Welcome to Alpine Brew Coffee. Ask me about our menu, prices, or what to
+              order — grab a seat by the fire and let&apos;s chat.
             </p>
           </div>
         )}
@@ -92,7 +92,7 @@ export function ChatWindow() {
 
         {error && (
           <div className="mx-auto max-w-sm rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-center text-sm text-destructive">
-            Frostbite hit a snowdrift and couldn&apos;t respond. Please try again in a moment.
+            Carl slipped on some ice and couldn&apos;t respond. Please try again in a moment.
           </div>
         )}
       </div>
@@ -121,7 +121,7 @@ export function ChatWindow() {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Message Frostbite…"
+          placeholder="Message Carl…"
           aria-label="Type your message"
           className="min-w-0 flex-1 rounded-full border border-input bg-background px-4 py-2.5 text-sm text-foreground outline-none ring-ring placeholder:text-muted-foreground focus-visible:ring-2"
         />

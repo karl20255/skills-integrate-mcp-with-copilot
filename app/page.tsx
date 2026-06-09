@@ -10,7 +10,7 @@ export default function Page() {
         <section className="flex flex-col gap-6">
           <div className="flex items-center gap-2 text-sm font-medium text-primary">
             <Coffee className="size-5" />
-            <span className="tracking-wide">SUMMIT &amp; STEAM</span>
+            <span className="tracking-wide">ALPINE BREW COFFEE</span>
           </div>
 
           <h1 className="font-heading text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl">
@@ -18,15 +18,15 @@ export default function Page() {
           </h1>
 
           <p className="max-w-md text-pretty leading-relaxed text-muted-foreground">
-            Fresh espresso, fireside seating, and a boot-drying rack waiting at the
-            base of the mountain. Got a question before you drop in? Chat with
-            Frostbite, our friendly support agent.
+            Fresh drip, lattes, and cold brew at the base of the mountain. Got a
+            question before you drop in? Chat with Carl, our friendly (and
+            occasionally punny) support barista.
           </p>
 
           <div className="overflow-hidden rounded-3xl border border-border shadow-lg">
             <Image
               src="/lodge-hero.png"
-              alt="Illustration of the Summit & Steam ski-lodge coffee shop at dusk"
+              alt="Illustration of the Alpine Brew Coffee ski-lodge coffee shop at dusk"
               width={900}
               height={500}
               className="h-auto w-full object-cover"
@@ -41,7 +41,7 @@ export default function Page() {
             </span>
             <span className="flex items-center gap-2">
               <MapPin className="size-4 text-primary" />
-              1 Alpine Way, slope-side
+              Base of the mountain
             </span>
           </div>
         </section>
